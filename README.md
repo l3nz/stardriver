@@ -8,6 +8,15 @@ FIXME: description
 
 Download from http://example.com/FIXME.
 
+## Documentation
+
+Run
+
+   lein marg
+
+And you'll find the docs under your doc folder.
+
+
 ## Usage
 
 FIXME: explanation

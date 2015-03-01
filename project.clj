@@ -6,4 +6,5 @@
   :dependencies [[org.clojure/clojure "1.6.0"]]
   :main ^:skip-aot stardriver.core
   :target-path "target/%s"
+  :plugins [[lein-marginalia "0.8.0"]]
   :profiles {:uberjar {:aot :all}})
