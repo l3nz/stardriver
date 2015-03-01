@@ -1,8 +1,7 @@
 (defproject stardriver "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "Drives a Star - or is it an Asterisk?"
+  :url "https://github.com/l3nz/stardriver"
+  :license {:name "Apache License V2" }
   :dependencies [[org.clojure/clojure "1.6.0"]]
   :main ^:skip-aot stardriver.core
   :target-path "target/%s"
