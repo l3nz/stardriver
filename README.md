@@ -8,6 +8,13 @@ FIXME: description
 
 Download from http://example.com/FIXME.
 
+## References
+
+Sample using Netty:
+ https://github.com/cymen/clojure-netty
+
+
+
 ## Documentation
 
 Run
