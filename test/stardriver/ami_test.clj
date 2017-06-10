@@ -11,14 +11,24 @@
 (defn to-buffer [str]
   (byte-streams/to-byte-buffer str))
 
+(defn buf-to-str [buf]
+  (byte-streams/convert buf String))
+
 
 (deftest basic-buf-decode
   (testing "basic decoding of value"
-    (let [buffer (to-buffer "name: value\r\nname2: value2\r\n\r\n")
+    (let [buffer (to-buffer "name: value\nname2: value2\n!")
           decoded-buffer (decode-ami buffer)]
 
     (is (= {:name "value", :name2 "value2"} decoded-buffer)))))
 
+
+(deftest basic-buf-encode
+  (testing "basic encoding of value"
+    (let [inp {:name "value", :name2 "value2"}
+          encoded-buffer (encode-ami inp)
+          res (buf-to-str encoded-buffer)]
+    (is (= "name: value\nname2: value2\n\n" res)))))
 
 
 

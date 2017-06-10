@@ -3,11 +3,10 @@
   :url "https://github.com/l3nz/stardriver"
   :license {:name "Apache License V2" }
   :dependencies [
-        [org.clojure/clojure "1.6.0"]
-        [io.netty/netty-all "4.0.25.Final"]
-        [com.fasterxml.jackson.core/jackson-databind "2.5.1"]
-        [gloss "0.2.4"]
-
+        [org.clojure/clojure "1.7.0"]
+        [aleph "0.4.1-beta2"]
+        [gloss "0.2.5"]
+        [org.clojure/core.async "0.2.374"]
   ]
   :main ^:skip-aot stardriver.core
   :target-path "target/%s"
